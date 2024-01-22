@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-body"> 
+       <div class="anme">
+           <p> <center> Abhishek Duggal <br>
+            <p> I'm <span id="role" class="a">Developer!</span>  </p>
+        </div></center></p>
+        <div class="sidebar-menu">
+            <div class="logo">
+                <img src="image.jpg.jpg" alt="pic"><br> <br>
+                
+                <a href="#">Abhishek Duggal</a>
+            </div>   
+            <div class="menu">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house-user"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <a href="#">About Me</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file"></i>
+                    <a href="#">Resume</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-baseball-bat-ball"></i>
+                    <a href="#">Hobbies</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-book"></i>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-server"></i>
+                    <a href="#">Experiences</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+            </div>
+            <div class="social-media">
+                <ul> 
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+    <script>
+        // Array of random words
+        var roles = ["Designer", "Coder", "full stack developer", "Creator", "Explorer"];
+
+        // Function to update the role randomly
+        function updateRole() {
+            var randomIndex = Math.floor(Math.random() * roles.length);
+            document.getElementById('role').innerText = roles[randomIndex];
+        }
+
+        // Call the function initially and then set an interval to update it every 5 seconds
+        updateRole();
+        setInterval(updateRole, 2000); // Change every 5 seconds
+    </script>
+</body>
+</html>
